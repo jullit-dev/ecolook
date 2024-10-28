@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+svg {
+  fill: $text-dark;
+  transition: $main-trs;
+}
+
+a:hover svg {
+  fill: $branded;
+}
+
+a:active svg {
+  transform: scale(0.8);
+}

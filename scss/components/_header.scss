@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 32px 0;
+  margin: 0 auto;
+
+  &--border {
+    border-bottom: 1px solid $branded;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__nav {
+    display: flex;
+    column-gap: 51px;
+  }
+
+  &__nav-list {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &__nav-item {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__icons {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__logo-img {
+    height: 36px;
+  }
+}
