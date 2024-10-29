@@ -1,7 +1,27 @@
 @use "../variables" as *;
 
 .slider {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  &__list {
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__list--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__list--one-row {
+    width: 968px;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    stroke: $text-dark;
+  }
 }

@@ -1,16 +1,24 @@
 @use "../variables" as *;
 
 .button-border {
+  width: max-content;
   padding: 13px 27px;
   border: 1px solid $branded;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
+  color: $branded;
   transition: $main-trs;
 }
 
 .button-underline {
+  width: max-content;
   padding-bottom: 7px;
   border-bottom: 1px solid currentColor;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.45;
+  color: $branded;
+  transition: $main-trs;
 }

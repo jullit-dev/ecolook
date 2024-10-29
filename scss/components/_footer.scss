@@ -1,0 +1,38 @@
+@use "../variables" as*;
+
+.footer {
+  background-color: $bg-branded;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    border-bottom: 1px solid $border-button;
+  }
+
+  &__logo-img {
+    height: 32px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__copyright {
+    padding: 20px 0;
+    font-weight: 400;
+  font-size: 12px;
+  color: $text-light;
+  }
+}

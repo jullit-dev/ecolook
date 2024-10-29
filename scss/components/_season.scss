@@ -1,0 +1,23 @@
+.season {
+  width: 100%;
+  background-image: url("../../img/season-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    padding: 80px 200px 80px 500px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__descr:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  &__descr:last-of-type {
+    margin-bottom: 40px;
+  }
+}
