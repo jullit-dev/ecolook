@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header header--home">
+  <header class="header">
     <div class="container">
       <div class="header__content">
         <a class="header__logo-link" href="#" aria-label="Вернуться на главную страницу">
@@ -43,21 +43,105 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero">
+    <section class="catalog">
       <div class="container">
-        <div class="hero__content">
-          <div class="hero__logo">
-            <img class="hero__img" src="/img/hero-logo.png" alt="Логотип Eco Look">
+        <div class="catalog__content">
+          <div class="catalog__top">
+            <h1 class="catalog__title">Каталог</h1>
+            <button class="button-border catalog__btn-filter" type="button" aria-label="Открыть фильтр каталога">Открыть</button>
           </div>
-          <div class="hero__text">
-            <h1 class="hero__title">
-              EcoLook&nbsp;&mdash; натуральная косметика для кожи и&nbsp;волос
-            </h1>
-            <p class="hero__descr">
-              Добро пожаловать в&nbsp;мир косметики, где каждое средство создано с&nbsp;любовью и&nbsp;заботой о&nbsp;вашей коже, волосах и&nbsp;здоровье
-            </p>
-            <a class="button-border hero__button" aria-label="Открыть страницу с информацией о Eco Look -  магазине натуральной косметике для кожи и волос">Подробнее</a>
-          </div>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--catalog">
+                <div class="product__top">
+                  <img src="./img/products/face-cream-01.jpg" alt="">
+                </div>
+                <div class="product__text">
+                  <div class="product__wrap product__wrap-title">
+                    <h3 class="product__title">Название </h3><span>890 &#8381</span>
+                  </div>
+                  <div class="product__wrap product__wrap-descr">
+                    <p class="product__descr">крем для лица </p><span>50ml</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -74,7 +158,7 @@
             </p>
             <button class="button-border hits__button" id="button-hits" type="button" aria-label="Посмотреть все хиты продаж">Смотреть все</button>
           </div>
-          <div class="hits__products">
+          <div class="products">
             <div class="slider">
               <ul class="slider__list slider__list--one-row hits__slider">
                 <li class="slider__item">
@@ -164,50 +248,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="categories">
-      <div class="container">
-        <div class="categories__content">
-          <div class="categories__text">
-            <h2 class="categories__title">
-              Категории
-            </h2>
-            <p class="categories__descr">У&nbsp;нас вы&nbsp;можете выбрать продукцию для здоровья вашего лица, тела и&nbsp;волос</p>
-            <p class="categories__descr">Формула каждого средства поможет вам раскрыть свою естественную красоту и&nbsp;создать безупречное сияние</p>
-          </div>
-          <div class="categories__item categories__face">
-            <h3 class="categories__item-title">
-              Уход для лица
-            </h3>
-            <a class="button-underline categories__item-link" href="" aria-label="Перейти в каталог средств по уходу за лицом">Смотреть</a>
-          </div>
-          <div class="categories__item categories__body">
-            <h3 class="categories__item-title">
-              Уход для тела
-            </h3>
-            <a class="button-underline categories__item-link" href="" aria-label="Перейти в каталог средств по уходу за телом">Смотреть</a>
-          </div>
-          <div class="categories__item categories__hair">
-            <h3 class="categories__item-title">
-              Уход для волос
-            </h3>
-            <a class="button-underline categories__item-link" href="" aria-label="Перейти в каталог средств по уходу за волосами">Смотреть</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="season">
-      <div class="container">
-        <div class="season__content">
-          <h2 class="season__title">Косметика для надежной защиты зимой</h2>
-          <p class="season__descr">Зимой ваши кожа и&nbsp;волосы нуждаются в&nbsp;защите от&nbsp;мороза и&nbsp;холодного ветра на&nbsp;улице, а&nbsp;так&nbsp;же от&nbsp;сухого воздуха в&nbsp;помещении</p>
-          <p class="season__descr">Особенные питательные и&nbsp;увлажняющие формулы помогут сохранить вашу красоту и&nbsp;здоровье</p>
-          <p class="season__descr">С&nbsp;нашей косметикой вы&nbsp;под надежной защитой</p>
-          <button class="button-border season__btn" type="button" aria-label="Ознакомиться с сезонными зимними предложениями">Подробнее</button>
         </div>
       </div>
     </section>

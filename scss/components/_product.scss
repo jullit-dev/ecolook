@@ -1,25 +1,53 @@
 @use "../variables" as *;
+@use "../fonts" as *;
 
 .product {
+  // width: 270px;
+
   &--hits {
     width: 230px;
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
     padding: 32px 20px;
     background-color: $bg-dark;
-    text-align: center;
+  }
+
+  &--hits &__text {
+    align-items: center;
   }
 
   &__title {
     margin-bottom: 10px;
   }
 
-  &__descr {
-    margin-bottom: 20px;
+  &__wrap-title {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-h3;
+    line-height: $line-height-h3;
+  }
+
+  &__descr,
+  &__wrap-descr {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.45;
     color: $text-light;
+  }
+
+  &--hits &__descr {
+    margin-bottom: 20px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__wrap span {
+    display: inline-block;
   }
 }

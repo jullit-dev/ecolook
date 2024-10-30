@@ -1,0 +1,16 @@
+.catalog {
+  padding: 40px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    justify-content: center;
+    gap: 30px;
+  }
+}

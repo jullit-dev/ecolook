@@ -74,6 +74,12 @@ fieldset {
   margin: 0;
 }
 
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-h1;
+  line-height: $line-height-h1;
+}
+
 h2 {
   font-size: $font-size-h2;
   font-weight: $font-weight-h2;
