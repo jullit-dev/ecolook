@@ -55,33 +55,42 @@
             <p class="card__descr">
               Увлажняющий гель для умывания. Идеально подходит для ежедневного умывания. Бережно очищает кожу от&nbsp;косметики и&nbsp;загрязнения            
             </p>
-            <div class="cadr__composition">
-              <p class="card__composition-text">
-                Состав
-              </p>
-              <button class="accordion-btn card__composition-btn">
-              
-              </button>
-            </div>
-            <div class="cadr__use">
-              <p class="card__use-text">
-                Способ применения
-              </p>
-              <button class="accordion-btn card__use-btn" >
+            <div class="accordion">
+              <div class="accordion__item cadr__composition">
+                <p class="accordion__title card__composition-text">
+                  Состав
+                </p>
+                <button class="accordion__btn card__composition-btn">
                 
-              </button>
+                </button>
+              </div>
+              <div class="accordion__item cadr__use">
+                <p class="accordion__title card__use-text">
+                  Способ применения
+                </p>
+                <button class="accordion__btn card__use-btn" >
+                  
+                </button>
+              </div>
             </div>
-            <fieldset class="card__volume">
-              <legend class="card__volume-text">Объем:</legend>
-              <label for="">
-                <input type="checkbox" name="50ml" checked><span>50ml</span>
-              </label>
-              <label for="">
-                <input type="checkbox" name="30ml"><span>30ml</span>
-              </label>
-            </fieldset>
-            <p class="card__price">890 &#8381</p>
-            <button class="button-border card__btn">Добавить в корзину</button>
+
+            <form class="card__form">
+              <fieldset class="card__volume">
+                <p class="card__volume-text">Объем:</p>
+                <label>
+                  <input class="card__volume-input" type="radio" name="volume" value="50ml" checked>50ml
+                </label>
+  
+                  <label>
+                    <input class="card__volume-input" type="radio" name="volume" value="30ml">30ml
+                  </label>
+              </fieldset>
+            </form>
+
+            <div class="card__bottom">
+              <p class="card__price">890 &#8381</p>
+              <button class="button-border card__btn">Добавить в корзину</button>
+            </div>
           </div>
         </div>
       </div>
